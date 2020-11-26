@@ -15,23 +15,25 @@
 </head>
 
 <body>
-  <div clas="container">
+  <div clas="container-fluid">
     <div class="jumbotron text-center">
       <h1>Missions to Mars</h1>
       <p><a class="btn btn-primary btn-lg" href="/scrape" role="button" onclick="myFunction()">Scrape New Data</a></p>
     </div>
 
     <!-- For Loader Animation -->
-    <div class="row">
-      <div class="col-12">
-    <div id="loader"></div>
-    <p id="load_info">{{ mars.loaded }}</p>
-    <div id="alert_text" class="alert alert-warning text-center" role="alert">
-      Please Do not close any Browser window opened while loading!
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div id="loader"></div>
+          <p id="load_info">{{ mars.loaded }}</p>
+          <div id="alert_text" class="alert alert-warning text-center" role="alert">
+            Please Do not close any Browser window opened while loading!
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
-    </div>
-
+    
     <div class="container animate-bottom" id="myDiv">
 
       <!-- mars data -->
