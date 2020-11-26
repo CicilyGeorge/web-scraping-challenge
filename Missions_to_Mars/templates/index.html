@@ -22,16 +22,21 @@
     </div>
 
     <!-- For Loader Animation -->
-    <div id="alert_text" class="text-center alert alert-secondary" role="alert">
-      Please Do not close any Browser window opened while loading!
-    </div>
+    <div class="row">
+      <div class="col-12">
     <div id="loader"></div>
     <p id="load_info">{{ mars.loaded }}</p>
+    <div id="alert_text" class="alert alert-warning text-center" role="alert">
+      Please Do not close any Browser window opened while loading!
+    </div>
+    </div>
+    </div>
+
     <div class="container animate-bottom" id="myDiv">
 
       <!-- mars data -->
       <div class="row">
-        <div class="col-12">
+        <div id="news" class="col-12">
           <h3>Latest Mars News</h3>
           <strong><p>{{ mars.news_title }}</p></strong>
           <p>{{ mars.news_p }}</p>
@@ -63,17 +68,16 @@
       <div class="row">
         {% for hemi in mars.hemisphere_image_urls %}
         <div class="col-md-6 col-sm-12">
-            <div class="card" style="max-width: 500px;">
+            <div class="card">
                 <img class="card-img-top" src="{{hemi.img_url}}" alt="{{ hemi.title }} Image"/>
-                <div class="card-body">
+                <div class="card-body text-center">
                     <h5 class="card-title"><strong>{{ hemi.title }}</strong></h5>
                 </div>
             </div>
         </div>
         {% endfor %}
-
+      </div>
     </div>
   </div>
-
 </body>
 </html>

@@ -49,10 +49,17 @@
 #alert_text {
     display: none;
     margin-top: -20px;
+    width: 100%;
+    text-align: center;
+
 }
 
 #load_info {
     display: none;
+}
+
+#news {
+    padding-left: 15px;
 }
 
 img {
@@ -72,6 +79,10 @@ th, td{
     padding:5px 5px 5px 10px;
 }
 
-h3 {
-    margin-top:20px;
+.container {
+    margin-bottom:20px;
+}
+
+.card {
+    max-width: 480px;
 }
