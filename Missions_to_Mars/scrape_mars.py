@@ -19,6 +19,8 @@ def init_browser():
 def scrape():
     try:
         browser = init_browser()
+        # Minimize browser window opening while scraping
+        browser.driver.minimize_window()
         # create surf_data dict that we can insert into mongo
         mars_data = {}
         mars_data['loaded'] = False
