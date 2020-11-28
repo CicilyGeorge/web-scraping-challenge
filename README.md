@@ -1,4 +1,4 @@
-# Web Scraping Challenge- Mission to Mars j
+# Web Scraping Challenge- Mission to Mars
 
 ![mission_to_mars](Images/mission_to_mars.png)
 
